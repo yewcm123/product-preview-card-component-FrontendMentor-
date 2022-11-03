@@ -37,13 +37,13 @@ body {
 
 main {
   display: flex;
+  flex-shrink: 0;
   align-items: center;
   justify-content: center;
-  background-color: hsl(30, 38%, 92%);
   text-align: center;
   min-height: 100vh;
-  margin:140px 400px
-  
+  max-width: 50vw;
+  margin: auto;
 }
 
 .display-container {
@@ -51,12 +51,20 @@ main {
   grid-template-columns: 50% 50%;
   background-color: white;
   border-radius: 10px;
+  min-width: 600px;
+  
+}
+
+@media only screen and (max-width: 1000px) {
+  display-container {
+    display: flex;
+  }
 }
 
 .image-section {
   max-width: 100%;
+  max-height: 100%;
   overflow: hidden;
-  height: 500px;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
 }
@@ -69,9 +77,8 @@ main {
   max-width: 100%;
   max-height: 100%;
   vertical-align: middle;
-  
+  object-fit: cover;
 }
-
 
 .info-section {
   display: block;
@@ -84,31 +91,32 @@ main {
   color: rgb(140, 140, 140);
   font-weight: bold;
   letter-spacing: 5px;
+  font-size: 1.2vw;
 }
 
 .center-title {
   margin-top: 20px;
   font-family: Fraunces;
   font-weight: 900;
-  font-size: 30px;
+  font-size: 2vw;
 }
 
 .description {
   margin-top: 15px;
   color: rgb(140, 140, 140);
-  line-height:1.8rem
+  line-height: 1.8vw;
 }
 
 .price-container {
   margin-top: 15px;
   display: flex;
-  align-items: center
+  align-items: center;
 }
 
 .current-price {
   font-weight: 900;
   font-family: Fraunces;
-  font-size: 50px;
+  font-size: 3.5vw;
   color: #3d8168;
   margin-right: 30px;
 }
@@ -116,7 +124,7 @@ main {
   font-family: Fraunces;
   text-decoration: line-through;
   color: rgb(140, 140, 140);
-  font-size: 20px;
+  font-size: 1.6vw;
 }
 
 .button-wrapper {
@@ -132,5 +140,9 @@ main {
   border-style: none;
   border-radius: 5px;
   padding: 2rem;
-  
+}
+
+.add-to-cart-button:hover {
+  background-color: #336c57;
+  cursor: pointer;
 }
