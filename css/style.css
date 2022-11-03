@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat, Fraunces, Arial;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: local("Montserrat"), url("./font/Montserrat-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: Fraunces;
+  src: local("Fraunces")
+    url("./font/Fraunces-VariableFont_SOFT,WONK,opsz,wght.ttf");
+}
+@font-face {
+  font-family: Montserrat-Black;
+  src: local("Montserrat Black"), url("./font/Montserrat-Black.ttf");
+}
+
+p {
+  font-size: 14px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+body {
+  background-color: hsl(30, 38%, 92%);
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(30, 38%, 92%);
+  text-align: center;
+  min-height: 100vh;
+  margin:140px 400px
+  
+}
+
+.display-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.image-section {
+  max-width: 100%;
+  overflow: hidden;
+  height: 500px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.image-container {
+  overflow: hidden;
+}
+
+.resize-fit-center {
+  max-width: 100%;
+  max-height: 100%;
+  vertical-align: middle;
+  
+}
+
+
+.info-section {
+  display: block;
+  padding: 2rem;
+  padding-top: 3rem;
+  text-align: left;
+}
+
+.top-title {
+  color: rgb(140, 140, 140);
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+
+.center-title {
+  margin-top: 20px;
+  font-family: Fraunces;
+  font-weight: 900;
+  font-size: 30px;
+}
+
+.description {
+  margin-top: 15px;
+  color: rgb(140, 140, 140);
+  line-height:1.8rem
+}
+
+.price-container {
+  margin-top: 15px;
+  display: flex;
+  align-items: center
+}
+
+.current-price {
+  font-weight: 900;
+  font-family: Fraunces;
+  font-size: 50px;
+  color: #3d8168;
+  margin-right: 30px;
+}
+.previous-price {
+  font-family: Fraunces;
+  text-decoration: line-through;
+  color: rgb(140, 140, 140);
+  font-size: 20px;
+}
+
+.button-wrapper {
+  margin-top: 20px;
+  padding: 0px 20px;
+}
+
+.add-to-cart-button {
+  display: block;
+  width: 100%;
+  background-color: #3d8168;
+  color: white;
+  border-style: none;
+  border-radius: 5px;
+  padding: 2rem;
+  
+}
