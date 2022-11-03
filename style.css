@@ -1,7 +1,45 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
 .attribution {
-    font-size: 11px;
-    text-align: center;
+	font-size: 11px;
+	text-align: center;
 }
 .attribution a {
-    color: hsl(228, 45%, 44%);
+	color: hsl(228, 45%, 44%);
+}
+
+main {
+	background-color: hsl(30, 38%, 92%);
+	text-align: center;
+	min-height: 100vh;
+}
+
+.display-container {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	background-color: white;
+	border-radius: 1rem;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.image-section {
+	max-width: 100%;
+	object-fit: contain;
+	overflow: hidden;
+}
+.image-container {
+    overflow: hidden;
+}
+.info-section {
+	margin-top: auto;
+	margin-bottom: auto;
+	align-content: center;
+	padding: 2rem;
 }
