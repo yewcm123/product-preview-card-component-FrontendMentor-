@@ -7,6 +7,7 @@
   --very-dark-blue: hsl(212, 21%, 14%);
   --dark-cyan: hsl(158, 36%, 37%);
   --dark-cyan-active: hsl(158, 26%, 37%);
+  --shadow-color: rgba(99, 99, 99, 0.2);
   --ff-fraunces: "Fraunces", sans-serif;
   --ff-montserrat: "Montserrat", sans-serif;
 }
@@ -71,6 +72,8 @@ article {
   background-color: var(--bg-white-color);
   font-family: var(--ff-montserrat);
   margin: 30px 0px;
+  box-shadow: var(--shadow-color) 0px 2px 8px 0px;
+  transition: 0.7s ease;
 }
 
 article > * {
@@ -88,6 +91,7 @@ picture {
 img {
   object-fit: cover;
   width: 100%;
+  transition: 0.7s ease;
 }
 
 /* ***************** */
@@ -103,7 +107,7 @@ img {
 }
 
 .info p:first-of-type {
-  font-size: clamp(1rem, 1vh, 4rem);
+  font-size: clamp(0.8rem, 0.8vh, 4rem);
   color: var(--dark-grayish-blue);
   font-weight: bold;
   letter-spacing: clamp(0.55em, 0.6em, 2em);
@@ -122,14 +126,14 @@ h1 {
   font-size: clamp(1rem, 1.8vh, 4rem);
   color: var(--dark-grayish-blue);
   line-height: clamp(1.5rem, 1.8vh, 4rem);
-  margin-bottom: 0.5em;
+  margin-bottom: 1em;
 }
 
 .prices {
   display: flex;
   font-family: Fraunces;
   align-items: center;
-  margin-bottom: 0.5em;
+  margin-bottom: 1em;
 }
 
 .current-price {
