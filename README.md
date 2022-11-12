@@ -14,6 +14,8 @@ This is a solution to the [Product preview card component challenge on Frontend 
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
+- [Acknowledgments](#acknowledgments)
+
 
 ## Overview
 
@@ -63,3 +65,5 @@ My current design still lack some responsiveness if the size of the screen width
 - Frontend Mentor - [@yewcm123](https://www.frontendmentor.io/profile/yourusername)
 - Email - yewcm123@gmail.com
 
+## Acknowledgement
+Huge thanks to vcarames(https://github.com/vcarames/Product-Card) for giving me suggestion for improvement. My design has been improved based on his works on this same challenge.
